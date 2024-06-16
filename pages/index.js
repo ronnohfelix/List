@@ -8,7 +8,12 @@ import Footer from "@/comps/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <>
+     <Head>
+      <title>Home</title>
+      <meta name="keywords" content="list" />
+      </Head>
+     <div>
       <h1 className={styles.title}>Homepage</h1>
       <p className={styles.text}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
         voluptates, voluptas quibusdam, doloremque, quod quae quia doloribus
@@ -18,6 +23,7 @@ export default function Home() {
       <Link href="/lists/list" className={styles.btn}>
         See List
       </Link>
-    </div>
+     </div>
+    </>
   );
 }
